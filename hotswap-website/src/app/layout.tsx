@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hot Swap Water Heater Company",
+  title: "Hot Swap Water Heater CO.",
   description: "Because Cold Water Really Sucks",
 };
 
