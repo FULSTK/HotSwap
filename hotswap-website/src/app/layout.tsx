@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Hot Swap Water Heater Company",
-  description: "Because Cold Water Sucks",
+  description: "Because Cold Water Really Sucks",
 };
 
 export default function RootLayout({
