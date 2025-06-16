@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="w-full lg:w-[50%] flex items-center px-6 sm:px-12 md:px-16 bg-[#FFFEEF]">
         <div className="max-w-[680px] w-full pt-[5vh] px-6 sm:px-12 md:px-16 flex flex-col gap-y-4">
         {/* Line 1 */}
-        <h1 className="text-[#0E3521] font-rotunda font-black leading-[1.1] whitespace-nowrap text-[clamp(2.5rem, 6vw, 64px)]">
+        <h1 className="text-[#0E3521] font-rotunda font-black leading-[1.1] whitespace-nowrap text-[clamp(2rem, 5vw, 64px)]">
             Northern Colorado’s
         </h1>
 
