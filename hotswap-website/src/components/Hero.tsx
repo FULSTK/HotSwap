@@ -9,26 +9,25 @@ export default function Hero() {
         {/* Left section */}
         <div className="w-full lg:w-[50%] flex items-center px-6 sm:px-12 md:px-16 bg-[#FFFEEF]">
           <div className="max-w-lg">
-            <h1 className="text-[#0E3521] font-rotunda font-black text-[clamp(2rem,5vw,3.5rem)] leading-[1.15] max-w-3xl space-y-2">
+            <h1 className="text-[#0E3521] font-rotunda font-black text-[clamp(2rem,5vw,3.5rem)] leading-tight max-w-3xl space-y-1">
                 <div>Northern Colorado’s</div>
-                <div>
+                <div className="flex flex-wrap items-end gap-x-2">
                     <span
                     style={{
                         fontFamily: '"redondo-ave", sans-serif',
                         fontWeight: 400,
                         fontSize: '80px',
-                        display: 'inline-block',
                         lineHeight: '1',
-                        marginRight: '0.5rem',
-                        verticalAlign: 'middle',
+                        display: 'inline-block',
                     }}
                     >
                     quickest
                     </span>
-                    <span className="align-middle text-[#0E3521]">water heater</span>
+                    <span className="text-[#0E3521]">water heater</span>
                 </div>
                 <div>replacements!</div>
                 </h1>
+
 
 
 
