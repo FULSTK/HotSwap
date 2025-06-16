@@ -1,32 +1,17 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+// src/app/layout.tsx
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import './globals.css';
+import Navbar from '../components/Navbar';
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "Hot Swap Water Heater CO.",
-  description: "Because Cold Showers Suck",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        {/* Adobe Fonts Kit Link */}
+        <link rel="stylesheet" href="https://use.typekit.net/hxv5upj.css" />
+      </head>
+      <body className="bg-[#F5F4DC] font-rotunda">
+        <Navbar />
         {children}
       </body>
     </html>
