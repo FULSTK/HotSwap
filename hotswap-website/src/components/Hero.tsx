@@ -8,47 +8,48 @@ export default function Hero() {
       <div className="flex flex-col lg:flex-row items-stretch min-h-[861px] w-full">
         {/* Left text section */}
         <div className="w-full lg:w-[50%] flex items-center px-6 sm:px-12 md:px-16 bg-[#FFFEEF]">
-          <div className="max-w-xl">
-            {/* Line 1: Northern Colorado’s */}
-            <h1 className="text-[#0E3521] font-rotunda font-black leading-none text-[clamp(2rem,6vw,3.5rem)] whitespace-nowrap">
-              Northern Colorado’s
+          <div className="max-w-2xl pt-16 flex flex-col gap-y-4">
+            {/* Line 1 */}
+            <h1 className="text-[#0E3521] font-rotunda text-[64px] font-black leading-[1.1] whitespace-nowrap">
+                Northern Colorado’s
             </h1>
 
-            {/* Line 2: quickest water heater */}
-            <h1 className="flex flex-wrap items-center gap-2 leading-none mt-2">
-              <span
+            {/* Line 2: quickest + water heater */}
+            <div className="flex flex-wrap items-baseline">
+                <span
                 style={{
-                  fontFamily: '"redondo-ave", sans-serif',
-                  fontWeight: 400,
-                  fontSize: 'clamp(2.5rem, 6vw, 4rem)',
-                  lineHeight: '1',
-                  color: '#0E3521',
+                    fontFamily: '"redondo-ave", sans-serif',
+                    fontWeight: 400,
+                    fontSize: '96px',
+                    lineHeight: '1',
+                    color: '#0E3521',
+                    marginRight: '0.5rem',
                 }}
-              >
+                >
                 quickest
-              </span>
-              <span className="text-[#0E3521] font-rotunda font-black text-[clamp(2rem,5vw,3rem)] leading-none">
+                </span>
+                <span className="text-[#0E3521] font-rotunda text-[64px] font-black leading-[1.1]">
                 water heater
-              </span>
+                </span>
+            </div>
+
+            {/* Line 3 */}
+            <h1 className="text-[#0E3521] font-rotunda text-[64px] font-black leading-[1.1]">
+                replacements!
             </h1>
 
-            {/* Line 3: replacements! */}
-            <h1 className="text-[#0E3521] font-rotunda font-black leading-none text-[clamp(2rem,5vw,3rem)] mt-2">
-              replacements!
-            </h1>
-
-            {/* Call Now Button */}
-            <button className="mt-6 flex items-center gap-3 bg-[#E24217] text-[#FFFEEF] font-rotunda text-[clamp(1rem,2vw,1.5rem)] font-extrabold px-6 py-3 rounded-md transition hover:brightness-110 w-fit">
-              <Image
+            {/* Call Button */}
+            <button className="mt-8 flex items-center gap-3 bg-[#E24217] text-[#FFFEEF] font-rotunda text-[24px] font-extrabold px-6 py-3 rounded-md transition hover:brightness-110 w-fit">
+                <Image
                 src="/phone-white.svg"
                 alt="Phone Icon"
-                width={20}
-                height={20}
-                className="w-5 h-5"
-              />
-              CALL NOW!
+                width={24}
+                height={24}
+                className="w-6 h-6"
+                />
+                CALL NOW!
             </button>
-          </div>
+            </div>
         </div>
 
         {/* Right image */}
