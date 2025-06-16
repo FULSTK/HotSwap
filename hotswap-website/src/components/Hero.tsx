@@ -46,14 +46,14 @@ export default function Hero() {
         </div>
 
         {/* Right image section with fixed crop */}
-        <div className="w-full lg:w-[50%] h-[861px] relative">
-          <Image
-            src="/van-hero.svg" // <<-- cropped version
+        <div className="w-full lg:w-[50%] relative aspect-[3/2] lg:aspect-auto h-auto lg:h-[861px]">
+        <Image
+            src="/van-hero.svg"
             alt="HotSwap Van Cropped"
             fill
-            className="object-contain object-right"
+            className="object-cover object-right"
             priority
-          />
+        />
         </div>
       </div>
     </section>
