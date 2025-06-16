@@ -8,29 +8,31 @@ export default function Hero() {
       <div className="flex flex-col lg:flex-row items-stretch min-h-[861px] w-full">
         {/* Left Section */}
         <div className="w-full lg:w-[50%] flex items-center justify-center px-6 sm:px-12 md:px-16 bg-[#FFFEEF]">
-          <div className="max-w-[700px] w-full">
-            <h1 className="text-[#0E3521] font-rotunda font-black text-[clamp(2rem,5vw,3.5rem)] leading-[1.15]">
-              Northern Colorado’s<br />
-              <span className="inline-block">
-                <span
-                  style={{
-                    fontFamily: '"redondo-ave", sans-serif',
-                    fontWeight: 400,
-                    fontSize: '80px',
-                    display: 'inline-block',
-                    lineHeight: '1',
-                    verticalAlign: 'middle',
-                    marginRight: '0.25rem',
-                  }}
-                >
-                  quickest
-                </span>
-                <span className="align-middle ml-1">water heater</span>
-              </span>
-              <br />
-              replacements!
+          <div className="max-w-[700px] w-full flex flex-col gap-3">
+            {/* Line 1: "Northern Colorado’s" */}
+            <h1 className="text-[#0E3521] font-rotunda font-black text-[clamp(2rem,5vw,3.5rem)] leading-none">
+              Northern Colorado’s
             </h1>
 
+            {/* Line 2: "quickest" */}
+            <p
+              style={{
+                fontFamily: '"redondo-ave", sans-serif',
+                fontWeight: 400,
+                fontSize: '80px',
+                color: '#0E3521',
+                lineHeight: '1',
+              }}
+            >
+              quickest
+            </p>
+
+            {/* Line 3: "water heater replacements!" */}
+            <h2 className="text-[#0E3521] font-rotunda font-black text-[clamp(2rem,5vw,3.5rem)] leading-none">
+              water heater replacements!
+            </h2>
+
+            {/* CTA Button */}
             <button className="mt-6 flex items-center gap-3 bg-[#E24217] text-[#FFFEEF] font-rotunda text-[clamp(1rem,2vw,1.5rem)] font-extrabold px-6 py-3 rounded-md transition hover:brightness-110 w-fit">
               <Image
                 src="/phone-white.svg"
@@ -44,7 +46,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Section */}
+        {/* Right Section (Van Image) */}
         <div className="w-full lg:w-[50%] h-[861px] relative">
           <Image
             src="/van-hero.svg"
