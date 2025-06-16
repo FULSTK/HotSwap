@@ -11,17 +11,9 @@ export default function Hero() {
           <div className="max-w-lg">
             <h1 className="text-[#0E3521] font-rotunda font-black leading-tight text-[clamp(2rem,5vw,3.5rem)] max-w-3xl">
                 Northern Colorado’s{' '}
-                <span
-                    style={{
-                    fontFamily: '"redondo-ave", sans-serif',
-                    fontWeight: 400,
-                    fontSize: '96px',
-                    display: 'inline-block',
-                    lineHeight: '1',
-                    }}
-                >
-                    quickest
-                </span>{' '}
+                <span className="font-redondo text-[96px] text-[#0E3521]">
+                quickest
+                </span>
                 water heater replacements!
             </h1>
 

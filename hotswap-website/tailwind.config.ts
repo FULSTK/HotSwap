@@ -9,6 +9,7 @@ const config: Config = {
       fontFamily: {
         sans: ['"rotunda-variable"', 'Poppins', 'Helvetica', 'sans-serif'],
         rotunda: ['"rotunda-variable"', 'Poppins', 'Helvetica', 'sans-serif'],
+        redondo: ['"redondo-ave"', 'sans-serif'],
         },
     },
   },
