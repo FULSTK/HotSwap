@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="flex flex-col lg:flex-row items-stretch min-h-[861px] w-full">
         {/* Left text section */}
         <div className="w-full lg:w-[50%] flex items-center px-6 sm:px-12 md:px-16 bg-[#FFFEEF]">
-        <div className="max-w-2xl pt-16 flex flex-col gap-y-4">
+        <div className="max-w-[680px] w-full pt-[5vh] px-6 sm:px-12 md:px-16 flex flex-col gap-y-4">
         {/* Line 1 */}
         <h1 className="text-[#0E3521] font-rotunda font-black leading-[1.1] whitespace-nowrap text-[clamp(2.5rem, 6vw, 64px)]">
             Northern Colorado’s
