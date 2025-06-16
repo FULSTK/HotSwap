@@ -9,22 +9,28 @@ export default function Hero() {
         {/* Left section */}
         <div className="w-full lg:w-[50%] flex items-center px-6 sm:px-12 md:px-16 bg-[#FFFEEF]">
           <div className="max-w-lg">
-            <h1 className="text-[#0E3521] font-rotunda font-black leading-[1.2] text-[clamp(2rem,5vw,3.5rem)] max-w-3xl">
+            <h1 className="text-[#0E3521] font-rotunda font-black text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] max-w-3xl">
             Northern Colorado’s<br />
-            <span
+            <span className="inline-block">
+                <span
                 style={{
-                fontFamily: '"redondo-ave", sans-serif',
-                fontWeight: 400,
-                fontSize: '96px',
-                lineHeight: '1',
-                display: 'inline-block',
+                    fontFamily: '"redondo-ave", sans-serif',
+                    fontWeight: 400,
+                    fontSize: '80px',
+                    display: 'inline-block',
+                    lineHeight: '1',
+                    marginRight: '0.25rem',
+                    verticalAlign: 'middle',
                 }}
-            >
+                >
                 quickest
-            </span>{' '}
-            water heater<br />
+                </span>
+                <span className="align-middle ml-1">&nbsp;water heater</span>
+            </span>
+            <br />
             replacements!
             </h1>
+
 
             <button className="mt-6 flex items-center gap-3 bg-[#E24217] text-[#FFFEEF] font-rotunda text-[clamp(1rem,2vw,1.5rem)] font-extrabold px-6 py-3 rounded-md transition hover:brightness-110 w-fit">
               <Image
