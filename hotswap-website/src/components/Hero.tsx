@@ -5,19 +5,16 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section className="relative w-full bg-[#FFFEEF] overflow-hidden">
-      {/* Two-column flex layout */}
       <div className="flex flex-col lg:flex-row items-stretch min-h-[861px] w-full">
-        {/* Left text section */}
+        {/* Left section */}
         <div className="w-full lg:w-[50%] flex items-center px-6 sm:px-12 md:px-16 bg-[#FFFEEF]">
           <div className="max-w-lg">
             <h1 className="text-[#0E3521] font-rotunda font-black leading-tight text-[clamp(2rem,5vw,3.5rem)]">
               Northern Colorado’s <br />
-              <em className="italic not-italic font-light">quickest</em>{' '}
-              water heater <br />
-              replacements!
+              <span className="italic not-italic font-light">quickest</span>{' '}
+              water heater replacements!
             </h1>
 
-            {/* Call Button */}
             <button className="mt-6 flex items-center gap-3 bg-[#E24217] text-[#FFFEEF] font-rotunda text-[clamp(1rem,2vw,1.5rem)] font-extrabold px-6 py-3 rounded-md transition hover:brightness-110 w-fit">
               <Image
                 src="/phone-white.svg"
@@ -31,13 +28,13 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right fixed-width van image */}
+        {/* Right image section with fixed crop */}
         <div className="w-full lg:w-[50%] h-[861px] relative">
           <Image
-            src="/mockup-van.svg"
-            alt="HotSwap Van"
+            src="/van-hero.svg" // <<-- cropped version
+            alt="HotSwap Van Cropped"
             fill
-            style={{ objectFit: 'cover', objectPosition: 'left' }}
+            className="object-contain object-right"
             priority
           />
         </div>
