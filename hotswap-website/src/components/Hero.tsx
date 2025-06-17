@@ -10,7 +10,10 @@ export default function Hero() {
         <div className="w-full lg:w-[50%] flex items-center px-6 sm:px-12 md:px-16 bg-[#FFFEEF]">
           <div className="max-w-xl">
             {/* Line 1: Northern Colorado’s */}
-            <h1 className="text-[#0E3521] font-rotunda font-black leading-none text-[clamp(2rem,6vw,3.5rem)] whitespace-nowrap">
+            <h1 
+            style={{ fontFamily: '"rotunda-variable", Poppins, Helvetica, sans-serif' }}
+            className="text-[#0E3521] font-rotunda font-black leading-none text-[clamp(2rem,6vw,3.5rem)] whitespace-nowrap"
+            >
               Northern Colorado’s
             </h1>
 
